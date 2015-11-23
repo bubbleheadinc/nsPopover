@@ -391,7 +391,8 @@
                 }
 
                 $popover.isOpen = true;
-                $popover.css('display', 'block');
+                //$popover.css('display', 'block');
+                $popover.addClass('is-active');
 
                 // position the popover accordingly to the defined placement around the
                 // |elm|.
@@ -459,7 +460,8 @@
                   elm.off('click', buttonClickHandler);
                   $popover.isOpen = false;
                   displayer_.cancel();
-                  $popover.css('display', 'none');
+                  //$popover.css('display', 'none');
+                  $popover.removeClass('is-active');
                   removeEventListeners();
 
                   // Call the close callback
