@@ -503,7 +503,7 @@
             .addClass('ns-popover-' + placement_ + '-placement')
             .addClass('ns-popover-' + align_ + '-align')
             .css('position', 'absolute')
-            .css('display', 'none')
+            // .css('display', 'none')
           ;
           $popovers.push($popover);
 
